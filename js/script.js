@@ -236,7 +236,7 @@
                 background: '#89fff1ff', 
                 borderColor: '#ffffff',
                 glyphColor: '#ffffff',
-                glyph: '✌️' 
+                glyph: '✨' 
             });
 
             if (centerMarker) centerMarker.map = null; 
