@@ -23,11 +23,11 @@
       <a class="navbar-brand fw-bold text-primary" href="#">MAPS</a>
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#" data-search="restaurant">Restaurant</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-search="cafe">Coffee Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-search="gas station">Gas Station</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-search="hotel">Hotels</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-search="store">Groceries</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#" data-search="Restaurantes, Comida">Restaurant</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-search="Cafeterías, Café">Coffee Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-search="Gasolineras, Gas Station">Gas Station</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-search="Hoteles, Hotel">Hotels</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-search="Tiendas, Abarrotes, Groceries">Groceries</a></li>
         </ul>
         <img src="https://testingbot.com/free-online-tools/random-avatar/300" class="rounded-circle ms-3" alt="user" width="35">
       </div>
@@ -74,9 +74,20 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Tu script principal -->
   <script src="/js/script.js"></script>
-  <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzs1VwZkVwxp1jtrx5cBg_MUvDiC3v4L8&loading=async&libraries=places&callback=initMap">
+
+  <!-- Carga dinámica del mapa -->
+  <script>
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDzs1VwZkVwxp1jtrx5cBg_MUvDiC3v4L8&libraries=places&callback=initMap`;
+    script.async = true;
+    document.head.appendChild(script);
   </script>
+
+
+
+
 </body>
 </html>
